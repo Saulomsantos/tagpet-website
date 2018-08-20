@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TagPet - Jefferson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*DIRECIONAMENTO: "." aponta uma classe, "#" aponta um id e somente o nome aponta para a tag*/
+
+        @font-face {
+            src: url("fonts/TCCEB.TTF");
+            font-family: 'Tw Cen MT Condensed Extra Bold';
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .botao {
+            text-align: center;
+            transform: translateY(20px);
+        }
+
+        .botao a {
+            background-image: linear-gradient(to right, red, black);
+            color: white;
+            font-family: 'Tw Cen MT Condensed Extra Bold';
+            font-size: 36px;
+            padding: 10px 60px;
+            position: relative;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .contato {
+            font-family: 'Tw Cen MT Condensed Extra Bold';
+        }
+
+        .contato a {
+            color: #808080;
+            text-decoration: none;
+        }
+
+        .contato h3 {
+            font-family: 'Tw Cen MT Condensed Extra Bold';
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .contato img {
+            width: 32px;
+        }
+
+        .contato li {
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        .contato ul {
+            list-style-type: none;
+        }
+
+        .desc_video {
+            font-family: arial;
+            font-size: 20px;
+            line-height: 26px;
+            margin: 10px 20px;
+            text-align: justify;
+        }
+
+        .descricao_produto {
+            color: #666666;
+            font-size: 18px;
+            text-align: left;
+            margin: 0px 0px 20px 20px;
+        }
+
+        .descricoes {
+            padding: 35px 0px 0px 10px;
+            width: 390px;
+        }
+
+        .descricoes h2 {
+            font-family: 'Tw Cen MT Condensed Extra Bold';
+            font-size: 36px;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .descricoes img {
+            width: 40px;
+        }
+
+        .dogs {
+            margin-left: 145px;
+            width: 348px;
+        }
+
+        .dogs img {
+            width: 348px;
+        }
+
+        .faixa_de_fundo_topo {
+            background-image: linear-gradient(to right, black, red);
+            display: block;
+            height: 25px;
+            transform: translateY(-70px);
+            width: 1366px;
+        }
+
+        .faixa_de_fundo_produtos {
+            background-image: linear-gradient(to right, black, red);
+            display: block;
+            height: 25px;
+            width: 1366px;
+        }
+
+        .faixa_de_fundo_contato {
+            background-image: linear-gradient(to right, black, red);
+            display: block;
+            height: 25px;
+            transform: translateY(5px);
+            width: 1366px;
+        }
+
+        .funcoes {
+            display: flex;
+            margin-bottom: 150px;
+            width: 1366px;
+        }
+
+        .funcoes ul {
+            list-style-type: none;
+        }
+
+        .funcoes li {
+            display: -webkit-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 26px;
+            padding-bottom: 50px;
+            text-align: justify;
+            width: 310px;
+        }
+
+        h2 {
+            font-family: 'Tw Cen MT Condensed Extra Bold';
+            text-align: center;
+            font-size: 62px;
+            text-transform: uppercase;
+        }
+
+        .logo {
+            background-color: white;
+            display: inline-block;
+            margin-left: 32px;
+            position: relative;
+            width: 350px;
+            z-index: 100;
+        }
+
+        .logo img {
+            height: 86px;
+            width: 332px;
+        }
+
+        .menu {
+            display: block;
+            transform: translateY(-105px)
+        }
+
+        .menu a {
+            color: #d60303;
+            padding: 10px 25px;
+            text-decoration: none;
+        }
+
+        .menu li {
+            display: inline-block;
+            font-family: Tw Cen MT Condensed Extra Bold;
+            font-size: 26pt;
+            list-style-type: none;
+            margin-right: 50px;
+            text-transform: uppercase;
+        }
+
+        .menu ul {
+            margin-left: 395px;
+            width: 1060px;
+        }
+
+        .menu ul img {
+            width: 37px;
+        }
+
+        #pagina_inicial {
+            height: auto;
+            margin: 25px auto auto auto;
+            width: 1366px;
+        }
+
+        .para_voce {
+            width: 400px;
+        }
+
+        .para_empresas {
+            width: 300px;
+        }
+
+        .preco {
+            font-family: Tw Cen MT Condensed Extra Bold;
+            font-size: 24px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .produtos {
+            margin: 150px 140px 200px 140px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .produtos img {
+            width: 300px;
+            transform: rotate(15deg);
+        }
+
+        .produto1 {
+            display: flex;
+            width: 600px;
+        }
+
+        .produto2 {
+            display: flex;
+            margin-left: 30px;
+            width: 600px;
+        }
+
+        .produto3 {
+            display: flex;
+            width: 600px;
+        }
+
+        .produto4 {
+            display: flex;
+            margin-left: 30px;
+            width: 600px;
+        }
+
+        .produtos_1e2 {
+            display: inline-flex;
+            margin-bottom: 150px;
+        }
+
+        .produtos_3e4 {
+            display: inline-flex;
+        }
+
+        .redes_sociais {
+            margin-left: 50px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .rodape {
+            display: inline-flex;
+            margin: 50px 100px 50px 100px;
+            width: 1260px;
+        }
+
+        .sobre_nos {
+            width: 300px;
+        }
+
+        .texto_menu {
+            vertical-align: 7px;
+        }
+
+        #topo {
+            height: 100px;
+        }
+
+        .vendas h3 {
+            font-family: 'Tw Cen MT Condensed Extra Bold';
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .video {
+            margin-top: 25px;
+            width: 421px;
+        }
+
+        .video img {
+            width: 416px;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="pagina_inicial">
+
+        <!-- <div class="pesquisa"></div> -->
+
+        <header id="topo">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagens/Logo.png" alt="logotipo da empresa TagPet - muito além da proteção com um QR code">
+                </a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="imagens/icones/menu/home.png" alt="ícone de casa">
+                            <span class="texto_menu">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="imagens/icones/menu/price.png" alt="ícone de etiqueta de compra">
+                            <span class="texto_menu">Comprar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="imagens/icones/menu/phone.png" alt="ícone de um telefone">
+                            <span class="texto_menu">Contato</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="imagens/icones/menu/login.png" alt="ícone de um usuário para login">
+                            <span class="texto_menu">Login</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </header>
+        <span class="faixa_de_fundo_topo">
+        </span>
+        <section class="funcoes">
+            <!--as imagens nas funções devem ter L: 324 px por A: 216 px-->
+            <div class="dogs">
+                <img src="imagens/dog_1.jpg" alt="cachorro da raça x em preto e braco">
+                <img src="imagens/dog_2.jpg" alt="cachorro da raça x em preto e braco">
+                <img src="imagens/dog_3.jpg" alt="cachorro da raça x em preto e braco">
+            </div>
+            <div class="descricoes">
+                <h2>Funções</h2>
+                <ul>
+                    <li>
+                        <img src="imagens/icones/checkbox.png" alt="ícone de uma checkbox">
+                        <p>
+                            &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy (DESCRIÇÃO)
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imagens/icones/checkbox.png" alt="ícone de uma checkbox">
+                        <p>
+                            &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy (DESCRIÇÃO)
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imagens/icones/checkbox.png" alt="ícone de uma checkbox">
+                        <p>
+                            &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy (DESCRIÇÃO)
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imagens/icones/checkbox.png" alt="ícone de uma checkbox">
+                        <p>
+                            &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy (DESCRIÇÃO)
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imagens/icones/checkbox.png" alt="ícone de uma checkbox">
+                        <p>
+                            &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy (DESCRIÇÃO)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="video">
+                <div class="reproducao">
+                    <iframe width="410" height="250" src="https://www.youtube.com/embed/L9XuAB2jPxQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="desc_video">
+                    <p>
+                        &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore magna aliquam erat
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="vendas">
+            <h2>Produtos</h2>
+            <span class="faixa_de_fundo_produtos">
+            </span>
+            <div class="produtos">
+                <div class="produtos_1e2">
+                    <div class="produto1">
+                        <div class="azul">
+                            <img src="imagens/produto_1.png" alt="pingente do produto TagPet azul">
+                            <div class="botao">
+                                <a href="#">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="desc_azul">
+                            <h3>Azul</h3>
+                            <div class="descricao_produto">
+                                <p>
+                                    &nbsp;&nbsp;Seu pet é macho e de porte pequeno ou médio adquira o pingente de aluminio 0,28mm na cor azul, resistente, a
+                                    prova d'agua, coloque o pingente na coleira do seu amigo e fique tranquilo(a).
+                                </p>
+                            </div>
+                            <div class="preco">
+                                <p>
+                                    De
+                                    <strike>R$ 15,90</strike>
+                                    <br> Por R$ 9,90
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto2">
+                        <div class="rosares">
+                            <img src="imagens/produto_2.png" alt="pingente do produto TagPet rosa resinado">
+                            <div class="botao">
+                                <a href="#">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="desc_rosares">
+                            <h3>Rosa resinado</h3>
+                            <div class="descricao_produto">
+                                <p>
+                                    &nbsp;&nbsp;Seu pet é fêmea e de grande adquira o pingente resinado na cor azul, resistente, a prova d'agua, coloque o pingente
+                                    na coleira do seu amigo e fique tranquilo(a).
+                                </p>
+                            </div>
+                            <div class="preco">
+                                <p>
+                                    De
+                                    <strike>R$ 29,90</strike>
+                                    <br> Por R$ 15,90
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtos_3e4">
+                    <div class="produto3">
+                        <div class="azulres">
+                            <img src="imagens/produto_3.png" alt="pingente do produto TagPet azul resinado">
+                            <div class="botao">
+                                <a href="#">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="desc_azulres">
+                            <h3>Azul resinado</h3>
+                            <div class="descricao_produto">
+                                <p>
+                                    &nbsp;&nbsp;Seu pet é macho e de grande adquira o pingente resinado na cor azul, resistente, a prova d'agua, coloque o pingente
+                                    na coleira do seu amigo e fique tranquilo(a).
+                                </p>
+                            </div>
+                            <div class="preco">
+                                <p>
+                                    <strike>De R$ 25,90</strike>
+                                    <br> Por R$ 15,90
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto4">
+                        <div class="rosa">
+                            <img src="imagens/produto_4.png" alt="pingente do produto TagPet rosa">
+                            <div class="botao">
+                                <a href="#">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="desc_rosa">
+                            <h3>Rosa</h3>
+                            <div class="descricao_produto">
+                                <p>
+                                    &nbsp;&nbsp;Seu pet é uma fêmea e de porte pequeno e médio adquira o pingente de aluminio na cor azul, resistente, a prova
+                                    d'agua, coloque o pingente na coleira do seu amigo e fique tranquilo(a).
+                                </p>
+                            </div>
+                            <div class="preco">
+                                <p>
+                                    <strike>De R$ 15,90</strike>
+                                    <br> Por R$ 9,90
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="contato">
+            <h2>Contato</h2>
+            <span class="faixa_de_fundo_contato"></span>
+            <div class="rodape">
+                <div class="para_voce">
+                    <h3>Para você</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Comprar</a>
+                            </li>
+                            <li>
+                                <a href="#">Criar Conta</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                            <li>
+                                <a href="#">Dúvidas Frequentes</a>
+                            </li>
+                            <li>
+                                <a href="#">Adotar Pet</a>
+                            </li>
+                            <li>
+                                <a href="#">Pet para venda</a>
+                            </li>
+                            <li>
+                                <a href="#">Empresas e Prestadores de Serviços</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sobre_nos">
+                    <h3>Sobre nós</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="#">Termos de Uso</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="para_empresas">
+                    <h3>Para empresas</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Sobre Nós</a>
+                            </li>
+                            <li>
+                                <a href="#">Cadastrar</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="redes_sociais">
+                    <h3>Redes sociais</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/user/TagPetBr">
+                                    <img src="imagens/icones/social media/youtube.png" alt="logo do youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/tagpet">
+                                    <img src="imagens/icones/social media/facebook.png" alt="logo do facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/tagpet/">
+                                    <img src="imagens/icones/social media/instagram.png" alt="logo do instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/+TagpetBr">
+                                    <img src="imagens/icones/social media/google_plus.png" alt="logo do google plus">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/tagpetbr">
+                                    <img src="imagens/icones/social media/twitter.png" alt="logo do twitter">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </article>
+</body>
+
+</html>
